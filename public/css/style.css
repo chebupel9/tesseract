@@ -1,0 +1,446 @@
+body {
+    background-color: #161618;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    border-bottom: 1px solid #bad6f0;
+    background-color: #161618;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.img-logo {
+    width: 150px;
+    height: 55px;
+}
+
+.language {
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-list a{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.flag {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.lang {
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.language-list {
+    display: none;
+    position: absolute;
+    background-color: #161618;
+    border: 1px solid #bad6f0;
+    top: 100%;
+    right: 5%;
+    width: 150px;
+    z-index: 3;
+}
+.language-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.language-list li {
+    padding: 0px 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-el {
+    padding: 20px 30px;
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.language {
+    color: #a3a3a3;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav a:hover {
+
+    color: #564e9c;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.title {
+    color:aliceblue;
+    font-size: 96px;
+    letter-spacing: 10px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.description {
+    color:darkgray;
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.particles {
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 30%;
+    transform: translateY(25%);
+
+}
+
+.start-btn {
+    border-radius: 20px;
+    background: linear-gradient(to right, #621EB8, #564e9c);
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+}
+
+.buttons-container {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.main-div {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
+    position: relative;
+    z-index: 0;
+    margin-top: 50px;
+}
+
+.form-container {
+    padding: 5%;
+    background-color: black;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.input-element {
+    border: 1px dashed #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 5%;
+}
+
+.img-input {
+    margin-right: 10px;
+}
+
+.img-input-done {
+    margin-right: 10px;
+    display: none;
+}
+
+.input {
+    display: block;
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    opacity: 0;
+}
+
+.input-description {
+    font-size: 12px;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.input-description p {
+    color: darkgray;
+    font-size: 16px;
+}
+
+.lang-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+    border: 1px solid #a3a3a3;
+}
+
+.select-text-lang {
+    color:aliceblue;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.select-text-lang option {
+    color: #161618;
+}
+
+.change-lang {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 20px;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-button button {
+    border-radius: 20px;
+    background: linear-gradient(to right, #621EB8, #564e9c);
+    padding: 5px;
+    box-shadow: none;
+    border: none;
+    width: 60%;
+}
+
+.form-button p {
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+    box-shadow: #621EB8;
+}
+
+.result-div {
+    background-color: #f2f0f0;
+    color: #161618;
+    display:none;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.result-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+textarea {
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.info {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.info-card {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+    width: 200px;
+    height: 200px;
+    background-color: #f2f0f0;
+    color: #161618;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.info-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.info-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #f2f0f0;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.line {
+    width: 66px;
+    height: 6px;
+    margin: 0 auto 55px;
+    background: #564e9c;
+}
+
+.about-text-container {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    color: #f2f0f0;
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: justify;
+    background-color: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.api-div {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #f2f0f0;
+    color:#161618;
+}
+
+.api-title {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.api-description p {
+    color: #161618;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.choose-prog-lang {
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border: 1px solid #161618;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.pre {
+    display: flex;
+    border: 1px solid #161618;
+}
+
+.select-el {
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+    background-color: transparent;
+    border: 1px solid #161618;
+    border-radius: 10px;
+    padding: 15px 15px;
+    width: 200px;
+    outline: none;
+}
+
+:not(pre)>code[class*=language-],pre[class*=language-] {
+    /* background:transparent; */
+}
+
+.hljs {
+    background: lightgray;
+}
+
+footer {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    color: #f2f0f0;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.up-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.up-link a {
+    color: #f2f0f0;
+}
+
+.up-arrow {
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
